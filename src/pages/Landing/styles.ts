@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     margin: 0;
-    padding: 2rem 3rem;
-
+    padding: 1rem 3rem 4rem;
+    float: left;
 `;
 
 export const Title = styled.div`
@@ -25,7 +25,6 @@ export const Linha = styled.div`
 `;
 
 export const Challenge = styled.div`
-display:inline-block;
     width:100%;
     background: #1f1f1f;
     padding: 2rem;
@@ -34,6 +33,11 @@ display:inline-block;
 
     @media(min-width:1100px){
         width:24%;
+        float: left;
+        height: 400px;
+        justify-content: space-around;
+    display: flex;
+    flex-direction: column;
 }
 
 `;
