@@ -30,6 +30,10 @@ export const Challenge = styled.div`
     padding: 2rem;
     border-radius: 5px;
     margin: 0.5rem;
+    height: 400px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
 
     @media(min-width:1100px){
         width:24%;
