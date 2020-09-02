@@ -25,6 +25,11 @@ export const Container = styled.div`
         background: #28a8e0;
     }
 
+    @media(max-width: 360px){
+        > div:nth-child(2){
+            display:none;
+    }    }
+
 `;
 
 export const Rede = styled.div`

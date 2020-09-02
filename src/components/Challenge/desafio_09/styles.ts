@@ -41,6 +41,13 @@ export const Load = styled.div`
         animation: right-pen 2s ease-in infinite 1s;
     }
 
+    @media(max-width: 380px){
+        :nth-child(3),
+        :nth-child(2){
+            display:none;
+        }
+    }
+
     @keyframes left-pen {
         0% { transform: rotate(0deg); }
         25% { transform: rotate(40deg); }

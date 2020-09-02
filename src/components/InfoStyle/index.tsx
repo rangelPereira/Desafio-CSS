@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const InfoTitle = styled.div`
     font-size: 28px;
-    height: 70px; 
+    min-height: 70px; 
 `; 
 
 export const InfoDescription = styled.div`

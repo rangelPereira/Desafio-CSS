@@ -7,7 +7,8 @@ export const Container = styled.div`
     flex-direction: column;
 
     > div:first-child{
-        height: 600px;
+        min-height: 600px;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
