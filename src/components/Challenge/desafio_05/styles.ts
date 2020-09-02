@@ -1,4 +1,10 @@
 import styled from 'styled-components';
+import { InfoTitle, InfoDescription, InfoButton, ButtonStyle } from '../../InfoStyle';
+
+export const Title = styled(InfoTitle)``;
+export const Description = styled(InfoDescription)``;
+export const Button = styled(InfoButton)``;
+export const ButtonArea = styled(ButtonStyle)``;
 
 export const Container = styled.div`
 `;

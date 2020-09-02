@@ -1,93 +1,29 @@
 import React from 'react';
-import Desafio01 from '../../components/desafio_01';
-import Desafio02 from '../../components/desafio_02';
-import Desafio03 from '../../components/desafio_03';
-import Desafio04 from '../../components/desafio_04';
-import Desafio05 from '../../components/desafio_05';
-import Desafio06 from '../../components/desafio_06';
-import Desafio07 from '../../components/desafio_07';
-import Desafio08 from '../../components/desafio_08';
-import Desafio09 from '../../components/desafio_09';
-import Desafio10 from '../../components/desafio_10';
+
+import Feed from '../../components/Feed';
+import FollowSuggestion from '../../components/FollowSuggestion';
+
+import Desafio01, { Titledesafio01, Infodesafio01, Buton01 } from '../../components/Challenge/desafio_01';
+import Desafio02, { Titledesafio02, Infodesafio02, Buton02 } from '../../components/Challenge/desafio_02';
+import Desafio03, { Titledesafio03, Infodesafio03, Buton03 } from '../../components/Challenge/desafio_03';
+import Desafio04, { Titledesafio04, Infodesafio04, Buton04 } from '../../components/Challenge/desafio_04';
+import Desafio05, { Titledesafio05, Infodesafio05, Buton05 } from '../../components/Challenge/desafio_05';
+import Desafio06, { Titledesafio06, Infodesafio06, Buton06 } from '../../components/Challenge/desafio_06';
+import Desafio07, { Titledesafio07, Infodesafio07, Buton07 } from '../../components/Challenge/desafio_07';
+import Desafio08, { Titledesafio08, Infodesafio08, Buton08 } from '../../components/Challenge/desafio_08';
+import Desafio09, { Titledesafio09, Infodesafio09, Buton09 } from '../../components/Challenge/desafio_09';
+
 
 import { 
     Container,
     Title,
     Info,
     Linha,
-    Challenge,
-    ChallengeHead,
-    ChallengeBody,
-    ChallengeTitle,
-    ChallengeInfo,
 } from './styles';
 
 
+
 const Repo: React.FC = () => {
-    const challenges = [
-        {
-            key: Math.random(),
-            title: '1º Desafio - Redes sociais com animação ao passar o cursor',
-            info: 'Esse desafio para mim foi o mais complicado, ainda não tinha trabalhado com positions no começo foi um pouco complicado. Mas depois de ler a documentação ficou tudo muito simples. ',
-            contentCha: <Desafio01 />,
-        },
-        {
-            key: Math.random(),
-            title: '2º Desafio - Load animado',
-            info: 'Esse desafio assim como o anterior também fiz uso dos positions porem dessa vez foi bem mais facil. Gostei bastante do resultado no final',
-            contentCha: <Desafio02 />,
-        },
-        {
-            key: Math.random(),
-            title: '3º Desafio - Letreiro continuo com mudança de cores',
-            info: 'Achei muito interessante como fazer isso, ja tinha usado uma biblioteca em uma interface nunca tinha tentado "fazer na unha" no começo pareceu algo bem complicado, mas depois de entender a ideia saiu quase q naturalmente',
-            contentCha: <Desafio03 />,
-        },
-
-        {
-            key: Math.random(),
-            title: '4º Desafio - Botão com animação ao passar o cursor',
-            info: 'No 4º desafio foi usado o ::before e o ::after, oque são seletores muito uteis! Já usei bastente em meus freelas no Wordpress.',
-            contentCha: <Desafio04 />,
-        },
-        {
-            key: Math.random(),
-            title: '5º Desafio - Efeito de Pulsar',
-            info: 'Esse desafio foi mais uma brincadeira para poderpraticar antes de criar o coração(Desafio 08)',
-            contentCha: <Desafio05 />,
-        },
-        {
-            key: Math.random(),
-            title: '6º Desafio - Efeito lightning text',
-            info: 'Este desafio usei o :nth-child() para criar um pequeno delay em cada letra, facendoa ssim que somente 1 fique colorida.',
-            contentCha: <Desafio06 />,
-        },
-        {
-            key: Math.random(),
-            title: '7º Desafio - Load animado com blocos',
-            info: 'O desafio 07 foi usado novamente o :nth-child()  com delay, mas dessa vez usando blocos, gostei bastante do resultado final!',
-            contentCha: <Desafio07 />,
-        },
-        {
-            key: Math.random(),
-            title: '8º Desafio - Coração Pulsando',
-            info: 'Esse é quase uma continuação do desafio 05, nele foi usado os seletores o ::before e ::after, juntamente com os positions(Que a esse ponto ja tenho até intimidade rs)',
-            contentCha: <Desafio08 />,
-        },
-        {
-            key: Math.random(),
-            title: '9º Desafio - Load animado Pendulo de Newton',
-            info: 'Esse até agora foi o mais interessante, na criação foi usado 3 seletores :first-child, :last-child, :before.',
-            contentCha: <Desafio09 />,
-        },
-        {
-            key: Math.random(),
-            title: '10º Desafio - Animação texto alternando',
-            info: 'O desafio numero 10, foi usado um content vazio e atravez das animações é inserido o conteudo alternativo.',
-            contentCha: <Desafio10 />,
-        },
-    ];
-
     return(
         <Container>
             <Title>Desafio 30 dias de CSS</Title>
@@ -97,21 +33,145 @@ const Repo: React.FC = () => {
             
 
             <Linha>
-            {challenges.map((item, key) =>(
-                <Challenge key={key}>
-                    <ChallengeHead>
-                        {item.contentCha}
-                    </ChallengeHead>
+            <Feed 
+                    elements={[
+                        <FollowSuggestion 
+                            title={[
+                            <Titledesafio01/>,
+                            ]}
+                            element={[
+                                <Desafio01 />,
+                            ]}
+                            description={[
+                                <Infodesafio01 />,
+                            ]}
+                            button={[
+                                <Buton01 />
+                            ]}
+                        />,
+                        <FollowSuggestion 
+                            title={[
+                            <Titledesafio02/>,
+                            ]}
+                            element={[
+                                <Desafio02 />,
+                            ]}
+                            description={[
+                                <Infodesafio02 />,
+                            ]}
+                            button={[
+                                <Buton02 />
+                            ]}
+                        />,
 
-                    <ChallengeBody>
-                        <ChallengeTitle>{item.title}</ChallengeTitle>
-                        <ChallengeInfo>{item.info}</ChallengeInfo>
-                    </ChallengeBody>
-                </Challenge>
-            ))}
+                        <FollowSuggestion 
+                            title={[
+                            <Titledesafio03/>,
+                            ]}
+                            element={[
+                                <Desafio03 />,
+                            ]}
+                            description={[
+                                <Infodesafio03 />,
+                            ]}
+                            button={[
+                                <Buton03 />
+                            ]}
+                        />,
 
+                        <FollowSuggestion 
+                            title={[
+                            <Titledesafio04/>,
+                            ]}
+                            element={[
+                                <Desafio04 />,
+                            ]}
+                            description={[
+                                <Infodesafio04 />,
+                            ]}
+                            button={[
+                                <Buton04 />
+                            ]}
+                        />,
 
+                        <FollowSuggestion 
+                            title={[
+                            <Titledesafio05/>,
+                            ]}
+                            element={[
+                                <Desafio05 />,
+                            ]}
+                            description={[
+                                <Infodesafio05 />,
+                            ]}
+                            button={[
+                                <Buton05 />
+                            ]}
+                        />,
 
+                        <FollowSuggestion 
+                            title={[
+                            <Titledesafio06/>,
+                            ]}
+                            element={[
+                                <Desafio06 />,
+                            ]}
+                            description={[
+                                <Infodesafio06 />,
+                            ]}
+                            button={[
+                                <Buton06 />
+                            ]}
+                        />,
+
+                        <FollowSuggestion 
+                            title={[
+                            <Titledesafio07/>,
+                            ]}
+                            element={[
+                                <Desafio07 />,
+                            ]}
+                            description={[
+                                <Infodesafio07 />,
+                            ]}
+                            button={[
+                                <Buton07 />
+                            ]}
+                        />,
+
+                        <FollowSuggestion 
+                            title={[
+                            <Titledesafio08/>,
+                            ]}
+                            element={[
+                                <Desafio08 />,
+                            ]}
+                            description={[
+                                <Infodesafio08 />,
+                            ]}
+                            button={[
+                                <Buton08 />
+                            ]}
+                        />,
+
+                        <FollowSuggestion 
+                            title={[
+                            <Titledesafio09/>,
+                            ]}
+                            element={[
+                                <Desafio09 />,
+                            ]}
+                            description={[
+                                <Infodesafio09 />,
+                            ]}
+                            button={[
+                                <Buton09 />
+                            ]}
+                        />,
+                    ]}
+                />
+
+                
             </Linha>
   
       </Container>

@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+
     margin: 0;
     padding: 1rem 3rem 4rem;
-    float: left;
 `;
 
 export const Title = styled.div`
@@ -21,7 +21,6 @@ export const Info = styled.div`
 export const Linha = styled.div`
     margin-left:-0.5rem;
     padding: 2rem 0;
-
 `;
 
 export const Challenge = styled.div`
