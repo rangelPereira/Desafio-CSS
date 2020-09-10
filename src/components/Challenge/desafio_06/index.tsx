@@ -12,17 +12,17 @@ from './styles';
 
 export const Titledesafio06: React.FC = () => {
   return(
-    <Title>1º Desafio - 
-      Redes sociais com animação ao passar o cursor
+    <Title>6º Desafio - 
+      Efeito lightning text
     </Title>
   );
 }
 
 export const Infodesafio06: React.FC = () => {
   return(
-    <Description>Esse desafio para mim foi o mais complicado,
-      ainda não tinha trabalhado com positions no começo foi um pouco complicado.
-      Mas depois de ler a documentação ficou tudo muito simples.
+    <Description>Este desafio usei o :nth-child() 
+      para criar um pequeno delay em cada letra, 
+      facendo assim que somente 1 fique colorida.
     </Description>
   );
 }
@@ -31,8 +31,8 @@ export const Infodesafio06: React.FC = () => {
 export const Buton06: React.FC = () => {
   return(
     <ButtonArea>
-      <Button href="https://www.youtube.com/watch?v=vpq7MlBqssA">GitHub</Button>
-      <Button href="https://www.youtube.com/watch?v=vpq7MlBqssA">Linkedin</Button>
+      <Button href="#">GitHub</Button>
+      <Button href="#">Linkedin</Button>
     </ButtonArea>
   );
 }

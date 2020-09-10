@@ -37,8 +37,8 @@ export const Infodesafio01: React.FC = () => {
 export const Buton01: React.FC = () => {
   return(
     <ButtonArea>
-      <Button href="https://www.youtube.com/watch?v=vpq7MlBqssA">GitHub</Button>
-      <Button href="https://www.youtube.com/watch?v=vpq7MlBqssA">Linkedin</Button>
+      <Button href="#">GitHub</Button>
+      <Button href="#">Linkedin</Button>
     </ButtonArea>
   );
 }

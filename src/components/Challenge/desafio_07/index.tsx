@@ -12,17 +12,16 @@ import {
   
   export const Titledesafio07: React.FC = () => {
     return(
-      <Title>1º Desafio - 
-        Redes sociais com animação ao passar o cursor
+      <Title>7º Desafio - 
+        Load animado com blocos
       </Title>
     );
   }
   
   export const Infodesafio07: React.FC = () => {
     return(
-      <Description>Esse desafio para mim foi o mais complicado,
-        ainda não tinha trabalhado com positions no começo foi um pouco complicado.
-        Mas depois de ler a documentação ficou tudo muito simples.
+      <Description>O desafio 07 foi usado novamente o :nth-child() com delay, 
+        mas dessa vez usando blocos, gostei bastante do resultado final!
       </Description>
     );
   }
@@ -31,8 +30,8 @@ import {
   export const Buton07: React.FC = () => {
     return(
       <ButtonArea>
-        <Button href="https://www.youtube.com/watch?v=vpq7MlBqssA">GitHub</Button>
-        <Button href="https://www.youtube.com/watch?v=vpq7MlBqssA">Linkedin</Button>
+        <Button href="#">GitHub</Button>
+        <Button href="#">Linkedin</Button>
       </ButtonArea>
     );
   }

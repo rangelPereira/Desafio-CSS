@@ -14,17 +14,17 @@ from './styles';
 
 export const Titledesafio02: React.FC = () => {
   return(
-    <Title>1º Desafio - 
-      Redes sociais com animação ao passar o cursor
+    <Title>2º Desafio
+       - Load animado
     </Title>
   );
 }
 
 export const Infodesafio02: React.FC = () => {
   return(
-    <Description>Esse desafio para mim foi o mais complicado,
-      ainda não tinha trabalhado com positions no começo foi um pouco complicado.
-      Mas depois de ler a documentação ficou tudo muito simples.
+    <Description>Esse desafio assim como o anterior também fiz uso 
+      dos positions porem dessa vez foi bem mais facil. 
+      Gostei bastante do resultado no final!
     </Description>
   );
 }
@@ -33,8 +33,8 @@ export const Infodesafio02: React.FC = () => {
 export const Buton02: React.FC = () => {
   return(
     <ButtonArea>
-      <Button href="https://www.youtube.com/watch?v=vpq7MlBqssA">GitHub</Button>
-      <Button href="https://www.youtube.com/watch?v=vpq7MlBqssA">Linkedin</Button>
+      <Button href="#">GitHub</Button>
+      <Button href="#">Linkedin</Button>
     </ButtonArea>
   );
 }
