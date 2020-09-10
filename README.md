@@ -6,7 +6,7 @@ Desafios de CSS
   o projeto consiste em uma interface(ainda em desenvolvimento) com diversos desafios CSS.</p>
 
 <p align="center">
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/rangelPereira/clone-Twitter?style=for-the-badge&logo=typescript">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/rangelPereira/Desafio-CSS?style=for-the-badge&logo=typescript">
   <img alt="Code by RangelPereira" src="https://img.shields.io/badge/Code%20by-RangelPereira-%237519C1?style=for-the-badge"><br/>
 </p>
 
